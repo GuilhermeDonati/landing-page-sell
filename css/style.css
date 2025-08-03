@@ -1,40 +1,38 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-}
-/*cor de fundo*/
-body{
-    background-color: #d4a669;
-}
-.box-funcionalidade{
-    background-color: #c49353;
-    border: 10px solid #ab7f45;
-}
-.top-mockup{
-background-color: #e78606;
-}
-.mockup-botao button{
-background-color: #e7860699;
-}
-
-
 /*phone*/
-@media only screen and (min-width:250px) /*and (max-width:420px)*/{
+@media only screen and (min-width:250px){
     .limitar-largura{
         max-width:450px;
         min-width:250px;
         width:calc(90% - 10px);
         margin:0 auto;
     }
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   }
+   /*cor de fundo*/
+   body{
+      background-color: #d4a669;
+   }
+   .box-funcionalidade{
+      background-color: #c49353;
+      border: 10px solid #ab7f45;
+   }
+   .top-mockup{
+   background-color: #e78606;
+   }
+   .mockup-botao button{
+   background-color: #e7860699;
+   }
     header{
-        background-color:rgba(0, 0, 0, 0.917);
+       
     }
     header figure{
         width:200px;
         height:80px;
-        background-image:url('../assets/Logo\ Digital\ Landidex\ Moderno.png');
+        background-image:url('../assets/Logo.png');
         background-size:cover;
         background-position:center;
         margin:0 auto;
@@ -54,7 +52,7 @@ background-color: #e7860699;
         font-size:20px
     }
     .banner figure{
-        background-image:url('../assets/img-retrat.jpg');
+        background-image:url('../assets/capa.png');
         background-size:cover;
         background-position:center;
         height:50vh;
@@ -77,8 +75,9 @@ background-color: #e7860699;
     .vantagens-img img{
         width:100%;
         height:100%;
+        border-radius: 20px;
     }
-    .box{
+    .vantagens .box{
         padding:5px;
         margin: 10px 0 40px 0;
         display:flex;
@@ -97,26 +96,58 @@ background-color: #e7860699;
     .image-box img{
         width:100%;
         height:100%;
+        border-radius: 20px;
     }
     
-    .box-funcionalidade{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
     .box .card figure{
-        max-width:140px;
         width:100%;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        background-size:cover;
+        background-position:center;
+        border-radius: 20px;
+        width:140px;
+        height: 140px;
     }
-    .box .card img{
+    
+    .otimizado-seo{
+        width:100%;
+        background-image:url('../assets/otimizado-seo.jpg');
+    }
+    .design-response{
+        width:100%;
+        background-image:url('../assets/design-reponsivo.jpg');
+    }
+    .Suporte{
+        width:100%;
+        background-image:url('../assets/sup-human.jpg');
+    }
+    .manul-code{
+        width:100%;
+        background-image:url('../assets/manual-code.jpg');
+    }
+    .card-vtgs-description{
+        width:100%;
+        max-width:140px;
+        margin:5px 0 15px 0;
+        font-size:15px;
+        font-weight: 500;
+
+    }
+    .vantagens .box .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vantagens .box .card img{
         width:100%;
         height:100%;
+        border-radius: 20px;
     }
+
     .botao-card-product{
         display:flex;
         justify-content: center;
@@ -139,6 +170,10 @@ background-color: #e7860699;
         border-radius: 10px;
         margin: 40px auto;
         padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
      }
      .aviso{
         background-color:red;
@@ -158,7 +193,7 @@ background-color: #e7860699;
      }
      .mockups-venda .mockup{
         border: 10px solid #ab7f45;
-        height:90vh;
+        max-height:90vh;
         position:relative;
         text-align: center;
      }
@@ -171,7 +206,6 @@ background-color: #e7860699;
         display:flex;
         justify-content: center;
         align-items: center;
-        width:200px;
         
      }
       .chamaris .top-mockup{
@@ -190,6 +224,7 @@ background-color: #e7860699;
      }
      .mockup .mockup-imagem img{
         width:calc(100% - 95px);
+        border-radius: 20px;
         
      }
      .mockup .preco{
@@ -218,11 +253,18 @@ background-color: #e7860699;
         padding:5px 15px;
         border-radius:20px;
         border:none;
+        margin:5px 0 20px 0;
+     }
+     .mockup-info p{
+        margin:5px 0;
+     }
+     .mockup-info{
+        margin: 0 0 15px 0;
      }
      .mockup-extra{
         margin-bottom:30px;
      }
-     .garantia{
+     /*.garantia{
         margin:50px 0;
      }
      .garantia .box-card{
@@ -237,7 +279,20 @@ background-color: #e7860699;
      .garantia figure img{
         width:100%;
         height:100%;
+     }*/
+     .garantia{
+        width:100%;
+        margin:30px 0 50px 0;
      }
+     .garantia figure{
+        width:100%;
+
+     }
+      .garantia figure img{
+        width:100%;
+        height:100%;
+      }
+
      .captura-de-leads form{
         background-color: black;
         text-align:center;
@@ -254,7 +309,6 @@ background-color: #e7860699;
      form .dados-largura{
         width:100%;
         max-width:260px;
-        border:solid red;
      }
      form .form-group{
         width:100%;
@@ -309,6 +363,7 @@ background-color: #e7860699;
         padding: 0 5px;
         margin-bottom:10px;
      }
+
      footer{
         margin-top:40px;
         font-size:15px
